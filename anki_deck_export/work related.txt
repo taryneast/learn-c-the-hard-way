@@ -1,0 +1,93 @@
++	Add
+-	Subtract
+*	Multiply
+/	Divide
+%	Modulus
+++	Increment
+--	Decrement
+==	Equal
+!=	Not equal
+&gt;	Greater than
+&lt;	Less than
+&gt;=	Greater than or equal
+&lt;=	Less than or equal
+&amp;&amp;	Logical and
+||	Logical Or
+!	Logical Not
+? :	Ternary
+&amp;	Bitwise And
+|	Bitwise Or
+^	Bitwise XOR
+~	Bitwise one's compliment
+&lt;&lt;	Bitwise shift left
+&gt;&gt;	Bitwise shift right
+=	Assign equal
++=	Plus and assign equal
+-=	Minus and assign equal
+*=	Multiply and assign equal
+/=	Divide and assign equal
+%=	Modulus and assign equal
+&lt;&lt;=	Shift left and assign equal
+&gt;&gt;=	Shift right and assign equal
+&amp;=	Bitwise-and and assign equal
+^=	XOR and assign equal
+|=	Bitwise-or and assign equal
+sizeof()	Get size of (in bytes)
+[]	Array subscript
+&amp;object	The address of the object
+*object	The value of the object
+-&gt;	Structure dereference
+.	Structure reference
+,	Comma
+( )	Parentheses
+{ }	Braces
+:	Colon
+//	Single-line comment start
+/*	Multi-line comment start
+*/	Multi-line comment end
+break	Exit out of a compound statement
+case	A branch in a switch-statement
+continue	Continue to the top of a loop (skipping any code following)
+do	Start a do-while loop
+default	Default branch in a switch-statement
+for	Start a for-loop
+goto	Jump to a label
+if	Starts an if-statement
+else	Starts the else-branch of an if-statement
+return	Return from a function
+switch	Start a switch-statement
+while	Start a while loop (or end a do-while loop)
+char	Character data type (Arrays of this can be strings)
+double	A double-sized floating-point data type
+float	A floating-point data type
+int	An integer data type
+long	A long integer data type
+short&nbsp;	A short integer data type
+void	Declare a data type empty (eg a void function does not return a value)
+union	Start a union-statement
+struct	Combine variables into a single record
+auto	Give a local variable a local lifetime
+const	Make a variable un-modifiable
+enum	Define a set of int constants
+extern	Declare that an indentifier is defined externally
+register	Declare that a variable be stored in a CPU register
+signed	A signed modifier for integer data types (can be positive of negative). Reduces size of integer by half as one bit is use to store the sign.
+sizeof	Determines the size of data
+static	Preserve variable value after its scope exits
+typedef	Create and name a new data type
+unsigned	An unsigned modifier for integer data types. these integers can only be positive.
+volatile	Declare that a variable might be modified elsewhere
+if-statement	if (TEST) {<div>&nbsp; &nbsp; CODE;</div><div>} else if (TEST) {</div><div>&nbsp; &nbsp; CODE;</div><div>} else {</div><div>&nbsp; &nbsp; CODE;</div><div>}</div>
+switch-statement	switch (OPERAND) {<div>&nbsp; &nbsp; case CONSTANT:</div><div>&nbsp; &nbsp; &nbsp; &nbsp; CODE;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; break;</div><div>&nbsp; &nbsp; default:</div><div>&nbsp; &nbsp; &nbsp; &nbsp; CODE;</div><div>}</div>
+while-loop	while (TEST) {<div>&nbsp; &nbsp; CODE;</div><div>}</div>
+while-continue-loop	while (TEST) {<div>&nbsp; &nbsp; if (OTHER_TEST) {</div><div>&nbsp; &nbsp; &nbsp; &nbsp; continue;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; // code here will never be reached</div><div>&nbsp; &nbsp; }</div><div>&nbsp; &nbsp; CODE;</div><div>}</div>
+while-break-loop	while (TEST) {<div>&nbsp; &nbsp; if (OTHER_TEST) {</div><div>&nbsp; &nbsp; &nbsp; &nbsp; break;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; // loop is permanently ended</div><div>&nbsp; &nbsp; }</div><div>&nbsp; &nbsp; CODE;</div><div>}</div>
+do-while-loop	do {<div>&nbsp; &nbsp; CODE;</div><div>} while (TEST);</div>
+for-loop	"for (INIT; TEST; POST) {<div>&nbsp; &nbsp; CODE;</div><div>}</div><div><br></div><div>eg</div><div><br></div><div>for (i = 0; i &lt; max; i++) {</div><div>&nbsp; &nbsp;printf(""%d "", i);</div><div>}</div>"
+enum-syntax	enum { CONST1, CONST2, CONST3 } NAME;<div><br></div><div>eg</div><div><br></div><div>enum { MALE, FEMALE, INTERSEX, NONBINARY } genders;</div>
+goto-syntax	IF (ERROR_TEST) {<div>&nbsp; &nbsp; goto fail;</div><div>}</div><div><br></div><div>fail:</div><div>&nbsp; &nbsp; CODE;</div>
+function-syntax	"TYPE NAME(ARG1, ARG2, ...) {<div>&nbsp; &nbsp; CODE;</div><div>&nbsp; &nbsp; return VALUE;</div><div>}</div><div><br></div><div>eg</div><div><br></div><div>int say_greeting(greeting, name) {</div><div>&nbsp; &nbsp; printf(""%s to you %s\n"", greeting, name);</div><div>&nbsp; &nbsp; return 0;</div><div>}<br></div>"
+typedef-syntax	typedef DEFINITION IDENTIFIER;<div><br></div><div>eg</div><div><br></div><div>typedef unsigned char byte;<br></div>
+struct-syntax	struct NAME {<div>&nbsp; &nbsp; ELEMENTS;</div><div>} [VARIABLE_NAME];</div><div><br></div><div>variable name is optional and preferred not to use unless eg combined with typedef eg:<br><br>typedef struct [STRUCT_NAME] {</div><div>&nbsp; &nbsp; ELEMENTS;</div><div>} IDENTIFIER;<br></div>
+union-syntax	unin NAME {<div>&nbsp; &nbsp; ELEMENTS;</div><div>} [VARIABLE_NAME];</div>
+type of <b>'A'</b> ?	<b>char</b> - a single character
