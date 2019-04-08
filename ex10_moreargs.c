@@ -7,13 +7,12 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    int n = 1;
-    int i = 0;
-    for (n = 1; n < argc; n++) {
+    for (int n = 1; n < argc; n++) {
         printf("arg: %d of %d - %s\n", n, argc - 1, argv[n]);
 
-        for (i = 0; argv[n][i] != '\0'; i++) {
-            char letter = argv[n][i];
+        char letter = '\0';
+
+        for (int i = 0; (letter = argv[n][i]) != '\0'; i++) {
 
             switch (letter) {
                 case 'a':
