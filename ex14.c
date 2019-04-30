@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 #include <ctype.h>
 
 // forward declarations
@@ -16,8 +17,9 @@ void print_arguments(int argc, char *argv[]) {
 
 void print_letters(char arg[]) {
     int i = 0;
+    int length = strlen(arg);
 
-    for (i=0; arg[i] != '\0'; i++) {
+    for (i=0; i < length; i++) {
         char ch = arg[i];
 
         if (can_print_it(ch)) {
@@ -29,7 +31,7 @@ void print_letters(char arg[]) {
 }
 
 int can_print_it(char ch) {
-    return isalpha((int)ch) || isblank((int)ch);
+    return isalpha((int)ch) || isdigit((int)ch) || isblank((int)ch);
 }
 
 int main(int argc, char *argv[]) {
