@@ -40,6 +40,12 @@ int main(int argc, char *argv[]) {
             cur_name++, cur_age++) {
         printf("%s lived %d years so far.\n", *cur_name, *cur_age);
     }
+    printf("---\n");
+
+    // print out pointer addresses too
+    for (i = 0; i < count; i++) {
+        printf("Address of name: %p and age: %p\n", (cur_name + i), (cur_age + i));
+    }
 
     return 0;
 }
